@@ -10,9 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 832731514616974796}
   - component: {fileID: 832731514616974794}
-  - component: {fileID: 832731514616974797}
-  - component: {fileID: 832731514616974792}
-  - component: {fileID: 832731514616974795}
   m_Layer: 0
   m_Name: ExampleEnemy
   m_TagString: Untagged
@@ -32,6 +29,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 832731515411446912}
+  - {fileID: 4991532467843074890}
+  - {fileID: 2167856870937018293}
+  - {fileID: 3390992638157085831}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75,138 +75,6 @@ MonoBehaviour:
   _stage1AttackDamage: 5
   _stage2AttackDamage: 7
   _stage3AttackDamage: 10
---- !u!114 &832731514616974797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832731514616974799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Stage 1 Attack
-  _unlocked: 1
-  _source: {fileID: 0}
-  _cost: 0
-  _maxCharges: 1
-  _currentCharges: 1
-  _onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 832731514616974794}
-        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
-        m_MethodName: Stage1Attack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _animator: {fileID: 832731515411447166}
-  _animState: Attack1
-  _cooldown: 5
-  _onCooldownReset:
-    m_PersistentCalls:
-      m_Calls: []
-  _onAvailable:
-    m_PersistentCalls:
-      m_Calls: []
-  _stage: 1
-  _lockOnNextStage: 0
---- !u!114 &832731514616974792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832731514616974799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Stage 2 Attack
-  _unlocked: 0
-  _source: {fileID: 0}
-  _cost: 0
-  _maxCharges: 1
-  _currentCharges: 1
-  _onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 832731514616974794}
-        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
-        m_MethodName: Stage2Attack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _animator: {fileID: 832731515411447166}
-  _animState: Attack2
-  _cooldown: 10
-  _onCooldownReset:
-    m_PersistentCalls:
-      m_Calls: []
-  _onAvailable:
-    m_PersistentCalls:
-      m_Calls: []
-  _stage: 2
-  _lockOnNextStage: 1
---- !u!114 &832731514616974795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832731514616974799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Stage 3 Attack
-  _unlocked: 0
-  _source: {fileID: 0}
-  _cost: 0
-  _maxCharges: 1
-  _currentCharges: 1
-  _onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 832731514616974794}
-        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
-        m_MethodName: Stage3Attack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _animator: {fileID: 832731515411447166}
-  _animState: Attack3
-  _cooldown: 12
-  _onCooldownReset:
-    m_PersistentCalls:
-      m_Calls: []
-  _onAvailable:
-    m_PersistentCalls:
-      m_Calls: []
-  _stage: 3
-  _lockOnNextStage: 1
 --- !u!1 &832731515411446914
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,3 +192,231 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minOpacity: 0.35
   _cycleOffset: 8
+--- !u!1 &2770350785412541104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3390992638157085831}
+  - component: {fileID: 2669936744816694249}
+  m_Layer: 0
+  m_Name: Attack 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3390992638157085831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770350785412541104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 832731514616974796}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2669936744816694249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770350785412541104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Stage 3 Attack
+  _unlocked: 0
+  _source: {fileID: 0}
+  _cost: 0
+  _isAutomatic: 0
+  _maxCharges: 1
+  _currentCharges: 1
+  _onExecute:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 832731514616974794}
+        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
+        m_MethodName: Stage3Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _animator: {fileID: 832731515411447166}
+  _animState: Attack3
+  _cooldown: 12
+  _onCooldownReset:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAvailable:
+    m_PersistentCalls:
+      m_Calls: []
+  _stage: 3
+  _lockOnNextStage: 1
+--- !u!1 &4288122259652420127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4991532467843074890}
+  - component: {fileID: 7382652476997149275}
+  m_Layer: 0
+  m_Name: Attack 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4991532467843074890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288122259652420127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 832731514616974796}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7382652476997149275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288122259652420127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Stage 1 Attack
+  _unlocked: 1
+  _source: {fileID: 0}
+  _cost: 0
+  _isAutomatic: 0
+  _maxCharges: 1
+  _currentCharges: 1
+  _onExecute:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 832731514616974794}
+        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
+        m_MethodName: Stage1Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _animator: {fileID: 832731515411447166}
+  _animState: Attack1
+  _cooldown: 5
+  _onCooldownReset:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAvailable:
+    m_PersistentCalls:
+      m_Calls: []
+  _stage: 1
+  _lockOnNextStage: 0
+--- !u!1 &8780844068780298370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2167856870937018293}
+  - component: {fileID: 4283764973704122528}
+  m_Layer: 0
+  m_Name: Attack 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2167856870937018293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780844068780298370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 832731514616974796}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4283764973704122528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780844068780298370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3364b9df12964534bb393bdf718213eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Stage 2 Attack
+  _unlocked: 0
+  _source: {fileID: 0}
+  _cost: 0
+  _isAutomatic: 0
+  _maxCharges: 1
+  _currentCharges: 1
+  _onExecute:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 832731514616974794}
+        m_TargetAssemblyTypeName: ExampleEnemy, Assembly-CSharp
+        m_MethodName: Stage2Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _animator: {fileID: 832731515411447166}
+  _animState: Attack2
+  _cooldown: 10
+  _onCooldownReset:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAvailable:
+    m_PersistentCalls:
+      m_Calls: []
+  _stage: 2
+  _lockOnNextStage: 1

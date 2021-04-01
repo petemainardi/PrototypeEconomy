@@ -38,6 +38,12 @@ public class ExampleCharacter : CombatCharacter
             this.Targets.ForEach(t => t.TakeDamage(_heavyAttackDamage));
         }
     }
+
+    [SerializeField] private int _autoXP = 1;
+    public void AutoXP()
+    {
+        this.XpPool.Receive(this._autoXP);
+    }
     // ============================================================================================
 }
 // ================================================================================================

@@ -45,7 +45,7 @@ public class CombatCharacter : MonoBehaviour, ICombattant
     // Mono =======================================================================================
     private void Start()
     {
-        _abilities = this.GetComponents<CharacterAbility>();
+        _abilities = this.GetComponentsInChildren<CharacterAbility>();
 
         // For prototype purposes, just assume there is one enemy and that is our target
         // TODO: actually implement a targeting system...

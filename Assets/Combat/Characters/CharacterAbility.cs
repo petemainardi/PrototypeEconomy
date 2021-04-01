@@ -37,6 +37,9 @@ public class CharacterAbility : MonoBehaviour
     [SerializeField, Range(0, 100)] private int _cost;
     public int Cost => _cost;
 
+    [SerializeField] private bool _isAutomatic = false;
+    public bool IsAutomatic { get => _isAutomatic; set => _isAutomatic = value; }
+
     [Space, Space]
     [SerializeField, Range(1, 100)] private int _maxCharges = 1;
     [SerializeField] private int _currentCharges = 1;
@@ -66,6 +69,9 @@ public class CharacterAbility : MonoBehaviour
     // Monobehavior ===============================================================================
     private void Update()
     {
+        if (this._isAutomatic)
+            this.Execute();
+
         _cooldownTimer -= Time.deltaTime;
         if (_cooldownTimer <= 0 && _isOnCooldown)
         {

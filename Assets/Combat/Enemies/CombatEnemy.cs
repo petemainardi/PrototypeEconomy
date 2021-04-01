@@ -39,7 +39,7 @@ public class CombatEnemy : MonoBehaviour, ICombattant
     // Mono =======================================================================================
     private void Start()
     {
-        _abilities = this.GetComponents<EnemyAbility>();
+        _abilities = this.GetComponentsInChildren<EnemyAbility>();
         _health.OnValueChange.AddListener(CheckStageUnlocks);
         this.CheckStageUnlocks(_health.PercentFull);
 
